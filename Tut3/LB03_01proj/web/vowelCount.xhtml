@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Vowel count</title>
+    </h:head>
+    <h:body>
+        <h1>Vowel count</h1>
+        <br></br>
+        <h3>Vowels you typed</h3>
+        <h:panelGrid columns="2"
+                     headerClass="tabHead"
+                     columnClasses="col1,col2">
+            <h:panelGroup>
+                <h:outputText value="Your Vowels: "/>
+                <blockquote>
+                    <p> A: <h:outputText value="#{vowelCount.counterA}" /></p>
+                    <p> E: <h:outputText value="#{vowelCount.counterE}" /></p>
+                    <p> I: <h:outputText value="#{vowelCount.counterI}" /></p>
+                    <p> O: <h:outputText value="#{vowelCount.counterO}" /></p>
+                    <p> U: <h:outputText value="#{vowelCount.counterU}" /></p>
+                </blockquote>
+            </h:panelGroup>
+            <h:panelGroup>
+                <h:outputText value="Total Vowels: "/>
+                <blockquote>
+                    <p> A: <h:outputText value="#{vowelCount.totalA}" /></p>
+                    <p> E: <h:outputText value="#{vowelCount.totalE}" /></p>
+                    <p> I: <h:outputText value="#{vowelCount.totalI}" /></p>
+                    <p> O: <h:outputText value="#{vowelCount.totalO}" /></p>
+                    <p> U: <h:outputText value="#{vowelCount.totalU}" /></p>
+                </blockquote>
+            </h:panelGroup>
+        </h:panelGrid>
+    </h:body>
+</html>
+

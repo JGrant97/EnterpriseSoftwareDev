@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Vowel count</title>
+    </h:head>
+    <h:body>
+        <h1>Register</h1>
+        <h:form>
+            <p>Please Enter your name
+                <h:inputText  id="name"
+                              required="true"
+                              requiredMessage="Error: Please enter a username"
+                              value="#{vowelCount.name}" />
+            </p>
+            <p>Please Enter a Username
+                <h:inputText  id="username"
+                              required="true"
+                              requiredMessage="Error: Please enter a username"
+                              value="#{vowelCount.username}" />
+            </p>
+            <p>Please Enter a Password 
+                <h:inputSecret  id="pwd"
+                              required="true"
+                              requiredMessage="Error: Please enter a password"
+                              value="#{vowelCount.pwd}" />
+            </p>
+            <p>Please Confirm Password
+                <h:inputSecret  id="cpwd"
+                              required="true"
+                              requiredMessage="Error: Please confirm password"
+                              value="#{vowelCount.confirmPWD}" />
+            </p>
+            <h:commandButton value="Register" action="#{vowelCount.RegisterUser()}" />
+            <br/>
+            <h:outputText value="#{vowelCount.error}"/>
+        </h:form>
+    </h:body>
+</html>
+

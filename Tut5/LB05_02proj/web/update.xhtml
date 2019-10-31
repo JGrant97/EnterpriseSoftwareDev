@@ -1,0 +1,136 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+    <h:head>
+        <title>Customers</title>
+    </h:head>
+    <h:body>
+        <ui:composition template="/template.xhtml" >
+            <ui:define name="content">
+                <h1>Update Customer Details</h1>
+                <h:form>
+                    <h:panelGrid columns="2"
+                                 headerClass="tabHead"
+                                 columnClasses="col1,col2">
+                        <h:panelGroup>
+                            <blockquote>
+                                <b>
+                                    <p>Update Name:</p>
+                                    <p>Update Email:</p>
+                                    <p>Update Address1:</p>
+                                    <p>Update Address2:</p>
+                                    <p>Update City:</p>
+                                    <p>Update State:</p>
+                                    <p>Update Zip:</p>
+                                    <p>Update Phone:</p>
+                                    <p>Update Fax:</p>
+                                    <p>Update Credit Limit:</p>
+                                    <p>Update Discount Code:</p>
+                                </b>
+                            </blockquote>
+                        </h:panelGroup>
+                        <h:panelGroup>
+                            <br/><br/>
+                            <blockquote>
+                                <p>
+                                    <h:inputText
+                                        id="updateName"
+                                        required="false"
+                                        requiredMessage="Error: Please enter a text based value"
+                                        value="#{customer.updateName}">
+                                    </h:inputText>
+                                </p>
+                                <p>
+                                    <h:inputText
+                                        id="updateEmail"
+                                        required="false"
+                                        requiredMessage="Error: Please enter a text based value"
+                                        value="#{customer.updateEmail}">
+                                    </h:inputText>
+                                </p>
+                                <p>
+                                    <h:inputText
+                                        id="updateAddress1"
+                                        required="false"
+                                        requiredMessage="Error: Please enter a text based value"
+                                        value="#{customer.updateAddress1}">
+                                    </h:inputText>
+                                </p>
+                                <p>
+                                    <h:inputText
+                                        id="updateAddress2"
+                                        required="false"
+                                        requiredMessage="Error: Please enter a text based value"
+                                        value="#{customer.updateAddress2}">
+                                    </h:inputText>
+                                </p>
+                                <p>
+                                    <h:inputText
+                                        id="updateCity"
+                                        required="false"
+                                        requiredMessage="Error: Please enter a text based value"
+                                        value="#{customer.updateCity}">
+                                    </h:inputText>
+                                </p>
+                                <p>
+                                    <h:inputText
+                                        id="updateState"
+                                        required="false"
+                                        requiredMessage="Error: Please enter a text based value"
+                                        value="#{customer.updateState}">
+                                    </h:inputText>
+                                </p>
+                                <p>
+                                    <h:inputText
+                                        id="updateZip"
+                                        required="false"
+                                        requiredMessage="Error: Please enter a text based value"
+                                        value="#{customer.updateZip}">
+                                    </h:inputText>
+                                </p>
+                                <p>
+                                    <h:inputText
+                                        id="updatePhone"
+                                        required="false"
+                                        requiredMessage="Error: Please enter a text based value"
+                                        value="#{customer.updatePhone}">
+                                    </h:inputText>
+                                </p>
+                                <p>
+                                    <h:inputText
+                                        id="updateFax"
+                                        required="false"
+                                        requiredMessage="Error: Please enter a text based value"
+                                        value="#{customer.updateFax}">
+                                    </h:inputText>
+                                </p>
+                                <p>
+                                    <h:inputText
+                                        id="updateCreditLimit"
+                                        required="false"
+                                        requiredMessage="Error: Please enter a text based value"
+                                        value="#{customer.updateCreditLimit}">
+                                    </h:inputText>
+                                </p>
+                                <p>
+                                    <h:inputText
+                                        id="updateDiscountCode"
+                                        required="false"
+                                        requiredMessage="Error: Please enter a text based value"
+                                        value="#{customer.updateDiscountCode}">
+                                    </h:inputText>
+                                </p>
+                                <h:commandButton value="Update" action="#{customer.UpdateCustomer()}"/>
+                            </blockquote>
+                        </h:panelGroup>
+                    </h:panelGrid>
+                    <br/>
+                </h:form>
+            </ui:define>
+        </ui:composition>
+    </h:body>
+</html>
+

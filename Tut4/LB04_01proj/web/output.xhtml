@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+    <h:head>
+        <title>Output</title>
+    </h:head>
+    <h:body>
+        <ui:composition template="/template.xhtml">
+            <ui:define name="content">
+                <h1>Times Table</h1>
+                <p>The following results are:</p>
+                <h:form>
+                    <h:panelGrid columns="2"
+                                 headerClass="tabHead"
+                                 columnClasses="col1,col2">
+                        <h:panelGroup>
+                    <blockquote>
+                        <b>
+                            <p> 1:<h:outputText/></p>
+                            <p> 2:<h:outputText/></p>
+                            <p> 3:<h:outputText/></p>
+                            <p> 4:<h:outputText/></p>
+                            <p> 5:<h:outputText/></p>
+                            <p> 6:<h:outputText/></p>
+                            <p> 7:<h:outputText/></p>
+                            <p> 8:<h:outputText/></p>
+                            <p> 9:<h:outputText/></p>
+                            <p> 10:<h:outputText/></p>
+                            <p> 11:<h:outputText/></p>
+                            <p> 12:<h:outputText/></p>
+                        </b>
+                    </blockquote>
+                </h:panelGroup>
+                        <h:panelGroup>
+                            <blockquote>
+                                <p><h:outputText value="#{timestable.number}"/></p>
+                                <p><h:outputText value="#{timestable.result2}"/></p>
+                                <p><h:outputText value="#{timestable.result3}"/></p>   
+                                <p><h:outputText value="#{timestable.result4}"/></p>
+                                <p><h:outputText value="#{timestable.result5}"/></p>
+                                <p><h:outputText value="#{timestable.result6}"/></p>
+                                <p><h:outputText value="#{timestable.result7}"/></p>
+                                <p><h:outputText value="#{timestable.result8}"/></p>
+                                <p><h:outputText value="#{timestable.result9}"/></p>   
+                                <p><h:outputText value="#{timestable.result10}"/></p>
+                                <p><h:outputText value="#{timestable.result11}"/></p>
+                                <p><h:outputText value="#{timestable.result12}"/></p>
+                            </blockquote>
+                        </h:panelGroup>
+                    </h:panelGrid>
+                </h:form>
+            </ui:define>
+        </ui:composition>
+    </h:body>
+</html>
+
